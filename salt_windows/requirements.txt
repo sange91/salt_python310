@@ -1,0 +1,26 @@
+vcredist_x64_2013
+
+
+    ERROR: Command errored out with exit status 1:
+     command: 'F:\rnd\python3_window\Python310\python.exe' -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\Sange\\AppData\\Local\\Temp\\pip-install-v3iwx9bl\\cffi_2b3de9e3dc194d4f9dab66e1d409eb5d\\setup.py'"'"'; __file__='"'"'C:\\Users\\Sange\\AppData\\Local\\Temp\\pip-install-v3iwx9bl\\cffi_2b3de9e3dc194d4f9dab66e1d409eb5d\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base 'C:\Users\Sange\AppData\Local\Temp\pip-pip-egg-info-qbfviw64'
+         cwd: C:\Users\Sange\AppData\Local\Temp\pip-install-v3iwx9bl\cffi_2b3de9e3dc194d4f9dab66e1d409eb5d\
+    Complete output (19 lines):
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "C:\Users\Sange\AppData\Local\Temp\pip-install-v3iwx9bl\cffi_2b3de9e3dc194d4f9dab66e1d409eb5d\setup.py", line 127, in <module>
+        if sys.platform == 'win32' and uses_msvc():
+      File "C:\Users\Sange\AppData\Local\Temp\pip-install-v3iwx9bl\cffi_2b3de9e3dc194d4f9dab66e1d409eb5d\setup.py", line 105, in uses_msvc
+        return config.try_compile('#ifndef _MSC_VER\n#error "not MSVC"\n#endif')
+      File "F:\rnd\python3_window\Python310\lib\distutils\command\config.py", line 225, in try_compile
+        self._compile(body, headers, include_dirs, lang)
+      File "F:\rnd\python3_window\Python310\lib\distutils\command\config.py", line 132, in _compile
+        self.compiler.compile([src], include_dirs=include_dirs)
+      File "F:\rnd\python3_window\Python310\lib\distutils\_msvccompiler.py", line 323, in compile
+        self.initialize()
+      File "F:\rnd\python3_window\Python310\lib\distutils\_msvccompiler.py", line 220, in initialize
+        vc_env = _get_vc_env(plat_spec)
+      File "F:\rnd\python3_window\Python310\lib\site-packages\setuptools\msvc.py", line 316, in msvc14_get_vc_env
+        return _msvc14_get_vc_env(plat_spec)
+      File "F:\rnd\python3_window\Python310\lib\site-packages\setuptools\msvc.py", line 270, in _msvc14_get_vc_env
+        raise distutils.errors.DistutilsPlatformError(
+    distutils.errors.DistutilsPlatformError: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/

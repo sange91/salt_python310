@@ -1,0 +1,4 @@
+#!C:\Python38\python.exe
+# EASY-INSTALL-SCRIPT: 'salt==3004','salt-call'
+__requires__ = 'salt==3004'
+__import__('pkg_resources').run_script('salt==3004', 'salt-call')
